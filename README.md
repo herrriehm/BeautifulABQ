@@ -4,7 +4,7 @@ This snippet adds the fabulous Viridis colormap from matplotlib to Simulia Abaqu
 Copy `abaqus_v6.env` into your home directory or any other directory where Abaqus searches for environment files.
 Have a look at Abaqus Installation and Licensing Guide, chapter 4.1 to see where these directories might be. You can reach the guide from *Abaqus -> Help -> Search & Browse Guides... -> Abaqus Installation and Licensing Guide*.
 
-If you already have a `abaqus_v6.env` file or even use a `onCaeStartup()` routine, simply copy the contents from this repository to the appropriate place.
+If you already have an `abaqus_v6.env` file or even use an `onCaeStartup()` routine, simply copy the contents from this repository to the appropriate place.
 
 Abaqus will load the instructions at start-up and automatically use Viridis in the Visualization module.
 
