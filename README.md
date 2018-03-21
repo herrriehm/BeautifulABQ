@@ -1,6 +1,8 @@
 # ViridisABQ
 This snippet adds the fabulous Viridis colormap from matplotlib to Simulia Abaqus/CAE.
 
+![Cube in Viridis colormap in ABQ](viridiscube.png)
+
 Copy `abaqus_v6.env` into your home directory or any other directory where Abaqus searches for environment files.
 Have a look at Abaqus Installation and Licensing Guide, chapter 4.1 to see where these directories might be. You can reach the guide from *Abaqus -> Help -> Search & Browse Guides... -> Abaqus Installation and Licensing Guide*.
 
