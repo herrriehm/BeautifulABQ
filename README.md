@@ -1,5 +1,5 @@
 # ViridisABQ
-This snippet adds the fabulous Viridis colormap from matplotlib to Simulia Abaqus/CAE.
+This snippet adds the fabulous Viridis colormap from Python's [matplotlib](https://matplotlib.org/) to [Simulia Abaqus/CAE](https://en.wikipedia.org/wiki/Abaqus). Viridis has nothing but great advantages over the standard rainbow colormap (often called “jet”). All you have to do is use it.
 
 ![Cube in Viridis colormap in ABQ](viridiscube.png)
 
@@ -10,7 +10,15 @@ If you already have an `abaqus_v6.env` file or even use an `onCaeStartup()` rout
 
 Abaqus will load the instructions at start-up and automatically use Viridis in the Visualization module.
 
-For some background information on Viridis please have a look at: [mpl colormaps](https://bids.github.io/colormap/)
+For some background information on Viridis and why it's better than rainbow and for explanations to the image below, please have a look at: [mpl colormaps](https://bids.github.io/colormap/)
+
+![Overview over Viridis](viridisoverview.png)
+
+## Viridis for other software
+
+If you are so adventurous and use [Matlab](https://en.wikipedia.org/wiki/MATLAB), you can find Viridis here: [Perceptually uniform colormaps -  File Exchange - MATLAB Central](https://de.mathworks.com/matlabcentral/fileexchange/51986-perceptually-uniform-colormaps?requestedDomain=true).
+
+For you [gnuplot](https://en.wikipedia.org/wiki/Gnuplot) apologists, there's Viridis here: [Gnuplotting/gnuplot-palettes: Color palettes for gnuplot](https://github.com/Gnuplotting/gnuplot-palettes)
 
 ## License
 
