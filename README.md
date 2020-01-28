@@ -1,24 +1,44 @@
-# ViridisABQ
-This snippet adds the fabulous Viridis colormap from Python's [matplotlib](https://matplotlib.org/) to [Simulia Abaqus/CAE](https://en.wikipedia.org/wiki/Abaqus). Viridis has nothing but great advantages over the standard rainbow colormap (often called “jet”). All you have to do is use it.
+# BeautifulABQ
 
-![Cube in Viridis colormap in ABQ](viridiscube.png)
+_(the repository formerly known as `ViridisABQ`)_
+
+## What? Why?
+
+If from time to time you create scientific visualizations, it is likely that you do so with one of these softwares that use a beautiful rainbow color map. Well ... nope. It's not beautiful. It's evil. These rainbow color maps we all know by heart? They show us things that aren't even there. And the next moment they hide the rest from us.
+
+Please see for yourself:
+
+- [How Bad Is Your Colormap? (Or, Why People Hate Jet – and You Should Too) | Pythonic Perambulations](https://jakevdp.github.io/blog/2014/10/16/how-bad-is-your-colormap/)
+- [Why you should never use 'jet' colormap | Chong-Chong He](https://chongchonghe.github.io/post/colormap/)
+- [A dangerous rainbow: Why colormaps matter. » Behind the Headlines - MATLAB & Simulink](https://blogs.mathworks.com/headlines/2018/10/10/a-dangerous-rainbow-why-colormaps-matter/)
+
+## A nicely colored picture is worth a thousand words
+
+But thanks to some great creatures, help is at hand: cleverly optimized colormaps for __sequential__ and for __diverging__ datasets. And here you can download them for the FEM software [Abaqus CAE - SIMULA™ by Dassault Systèmes®](https://www.3ds.com/products-services/simulia/products/abaqus/abaquscae/).
+
+From now on, you can paint your Abaqus simulations in:
+
+- [`Viridis`](https://bids.github.io/colormap/) for __sequential__ data or
+- [`Cividis`](https://doi.org/10.1371/journal.pone.0199239) (basically Viridis compensated for color vision deficiencies) and
+- [`Cool2Warm`](https://doi.org/10.1007/978-3-642-10520-3_9) for __diverging__ data
+
+### Simple beam FEM analysis colored with Viridis
+![Simple beam FEM analysis colored with Viridis](beam-viridis.png)
+
+### Simple beam FEM analysis colored with Cividis
+![Simple beam FEM analysis colored with Cividis](beam-cividis.png)
+
+### Simple beam FEM analysis colored with Cool2Warm
+![Simple beam FEM analysis colored with Cool2Warm](beam-cool2warm.png)
+
+## You want it? You shall get it!
 
 Copy `abaqus_v6.env` into your home directory or any other directory where Abaqus searches for environment files.
 Have a look at Abaqus Installation and Licensing Guide, chapter 4.1 to see where these directories might be. You can reach the guide from *Abaqus -> Help -> Search & Browse Guides... -> Abaqus Installation and Licensing Guide*.
 
 If you already have an `abaqus_v6.env` file or even use an `onCaeStartup()` routine, simply copy the contents from this repository to the appropriate place.
 
-Abaqus will load the instructions at start-up and automatically use Viridis in the Visualization module.
-
-For some background information on Viridis and why it's better than rainbow and for explanations to the image below, please have a look at: [mpl colormaps](https://bids.github.io/colormap/)
-
-![Overview over Viridis](viridisoverview.png)
-
-## Viridis for other software
-
-If you are so adventurous and use [Matlab](https://en.wikipedia.org/wiki/MATLAB), you can find Viridis here: [Perceptually uniform colormaps -  File Exchange - MATLAB Central](https://de.mathworks.com/matlabcentral/fileexchange/51986-perceptually-uniform-colormaps?requestedDomain=true).
-
-For you [gnuplot](https://en.wikipedia.org/wiki/Gnuplot) apologists, there's Viridis here: [Gnuplotting/gnuplot-palettes: Color palettes for gnuplot](https://github.com/Gnuplotting/gnuplot-palettes)
+Abaqus will load the instructions at start-up and automatically make `Viridis`, `Cividis` and `Cool2Warm` available in the _Visualization_ module.
 
 ## License
 
